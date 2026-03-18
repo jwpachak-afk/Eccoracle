@@ -96,7 +96,7 @@ async function askOracle() {
   text.innerHTML = '<span class="loading">~ reading the tides ~</span>';
   mode.textContent = MODES[Math.floor(Math.random() * MODES.length)];
 
-  if (VERCEL_URL === "YOUR_VERCEL_URL_HERE") {
+  if (VERCEL_URL === "https://ecco-oracle.vercel.app") {
     setTimeout(() => {
       text.innerHTML = FALLBACKS[Math.floor(Math.random() * FALLBACKS.length)];
       btn.disabled = false;
